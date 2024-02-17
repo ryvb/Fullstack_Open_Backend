@@ -1,0 +1,27 @@
+{
+  "name": "fullstack_open_backend",
+  "version": "1.0.0",
+  "description": "json_for_data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ryvb/Fullstack_Open_Backend.git"
+  },
+  "author": "Roy V",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryvb/Fullstack_Open_Backend/issues"
+  },
+  "homepage": "https://github.com/ryvb/Fullstack_Open_Backend#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
