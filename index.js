@@ -10,6 +10,7 @@ morgan.token('body', req => {
 app.use(express.json())
 app.use(morgan(':method :url :status :res[content-length] - :response-time ms :body'))
 app.use(cors())
+app.use(express.static('dist'))
 
 
 let persons = [
@@ -124,7 +125,5 @@ app.listen(PORT, () => {
 
 
 /*
-request._startTime = Date.now()
-new Date().toLocaleTimeString("en-US", {timeZone: 'Europe/Amsterdam'})
-.format("DD-MM-YYYY HH:mm:ss")
+POST http://localhost:3001/api/persons HTTP/1.1
 */
