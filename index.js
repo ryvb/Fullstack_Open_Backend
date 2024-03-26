@@ -63,7 +63,7 @@ app.post('/api/persons', (request, response, next) => {
 app.put('/api/persons/:id', (request, response, next) => {
   const { name, number} = request.body
 
-  Person.findByIdAndUpdate(request.params.id, { name, number }, {new: true, runValidators: true, context'query' })
+  Person.findByIdAndUpdate(request.params.id, { name, number }, {new: true, runValidators: true, context: 'query' })
     .then(updatedPerson => {
       response.json(updatedPerson)
     })
@@ -111,11 +111,3 @@ app.listen(PORT, () => {
 })
 
 
-/*
-const body = request.body
-
-const person = {
-  name: body.content,
-  number: body.number,
-}
-*/
