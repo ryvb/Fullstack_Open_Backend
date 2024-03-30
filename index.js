@@ -111,3 +111,17 @@ app.listen(PORT, () => {
 })
 
 
+/*
+  const body = request.body
+
+  const person = new Person({
+    name: body.name,
+    number: body.number,
+  })
+
+  person.save().then(savedPerson => {
+    response.json(savedPerson)
+  })
+  .catch(error => next(error))
+})
+*/
